@@ -1,0 +1,47 @@
+.heading {
+  color: var(--text-light);
+}
+
+.home-main {
+  color: var(--text-secondary);
+  background-color: var(--primary);
+}
+
+.started-btn {
+  border-color: var(--accent);
+}
+
+.started-btn:hover {
+  background-color: var(--accent);
+  color: var(--text-light);
+}
+
+.template-img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.template-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(255, 0, 0, 0.2);
+}
+
+.contact {
+  background: linear-gradient(90deg, #000000, #b30000);
+}
+
+/* Steps responsiveness (if needed) */
+@media screen and (max-width:500px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+  .steps-content {
+    font-size: 1.5rem;
+  }
+  .step-head {
+    font-size: 2.5rem;
+  }
+  .step-subhead {
+    padding: 10px;
+  }
+}

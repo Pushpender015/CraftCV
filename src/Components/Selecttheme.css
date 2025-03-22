@@ -1,0 +1,99 @@
+.theme-header {
+  color: var(--accent);
+}
+
+.theme-main {
+  margin: 0 10vw;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.theme-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.theme-card:hover {
+  transform: translateY(-10px); /* Move the card up by 10px */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+
+.card-selected {
+  border-color: var(--accent);
+}
+
+.theme-card > img {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.radio-input {
+  cursor: pointer;
+}
+
+.theme-main-msg {
+  color: var(--accent);
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.btn-div {
+  margin: 20px 0 50px;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--accent);
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  border: 2px solid var(--accent);
+  border-radius: 5px;
+  padding: 7px 15px;
+}
+
+.btn:hover {
+  background-color: var(--accent);
+  color: var(--text-light);
+}
+
+.clr-select {
+  margin: 0 10vw;
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.clr-option > .color-box {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 750px) {
+  .theme-main {
+    grid-template-columns: 1fr;
+    margin: 0 5vw;
+  }
+  .clr-select {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .clr-select {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    justify-items: center;
+  }
+  .clr-option > .color-box {
+    width: 40px;
+    height: 40px;
+  }
+}

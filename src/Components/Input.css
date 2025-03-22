@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+/* Input Section Header */
+.input-header {
+  letter-spacing: 1px;
+}
+
+/* Main container */
+.input-main {
+  background-color: var(--primary);
+}
+
+/* Form styling */
+.input-form {
+  font-size: 14px;
+}
+
+/* Section titles */
+.input-section {
+  grid-column: 1 / -1;
+  margin-top: 20px;
+  color: var(--accent);
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Input fields */
+.input-field {
+  border: 1px solid #000000;  /* Changed to black */
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  outline-color: #000000;      /* Changed to black */
+  transition: box-shadow 0.3s ease;
+  font-size: 0.875rem;
+  color: #2d3748;
+}
+
+.input-field:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+input::placeholder {
+  font-size: 0.8rem;
+}
+
+/* Button styling */
+.input-btn {
+  text-align: center;
+  font-size: 0.95rem;
+  cursor: pointer;
+  background-color: var(--primary);
+  color: var(--accent);
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  border: 2px solid var(--accent);
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+}
+
+.input-btn:hover {
+  background-color: var(--accent);
+  color: var(--text-light);
+}
+
+/* Single field spanning two columns */
+.singlefield {
+  grid-column: 1 / -1;
+}
+
+/* Error messages */
+.input-err {
+  color: red;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* Year inputs */
+.year input {
+  border: none;
+  border-bottom: 1px solid #000000;  /* Changed to black */
+  margin: 0.5rem;
+  border-radius: 0.25rem;
+  outline: none;
+  font-weight: 400;
+  color: #2d3748;
+}
+
+.year input::placeholder {
+  text-align: center;
+}
+
+/* Input label span */
+.input-span {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+/* Add input block */
+.add-input-block {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.add-input-icon {
+  font-size: 1.25rem;
+  transition: transform 0.1s ease-in-out;
+}
+
+.add-input-icon:hover {
+  transform: scale(1.15);
+}
+
+/* Remove icon styling */
+.input-remove {
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--accent);
+}
+
+.input-remove-icon {
+  font-size: 1.125rem;
+}
+
+/* Input index */
+.input-index {
+  text-align: left;
+  font-size: 0.75rem;
+  color: var(--accent);
+}
+
+/* Interest grid */
+.input-interest {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.input-interest > div > input {
+  width: 100%;
+  border: 1px solid #000000;  /* Changed to black */
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  outline-color: #000000;      /* Changed to black */
+  font-weight: 400;
+  color: #2d3748;
+}
+
+/* Close icon for interest */
+.interest-cls-icon {
+  font-size: 1rem;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  cursor: pointer;
+}
+
+/* Education grade */
+.edu-grade {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.grade-input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.grade-input > input {
+  border: 1px solid #000000;  /* Changed to black */
+  border-radius: 0.375rem;
+  padding: 0.25rem;
+  width: 70%;
+  outline-color: #000000;      /* Changed to black */
+}
+
+/* Form image container */
+.form-img {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.form-img > input {
+  border: 1px solid #000000;  /* Changed to black */
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+  outline-color: #000000;      /* Changed to black */
+  color: #2d3748;
+  font-weight: 400;
+}
+
+.form-img > div {
+  font-family: 'Courgette', cursive;
+  font-size: 1.25rem;
+  color: var(--accent);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Hint box */
+.hint {
+  color: var(--text-light) !important;
+  font-weight: 400 !important;
+  font-family: 'Comfortaa', cursive !important;
+  font-size: 0.75rem !important;
+  padding: 0.5rem !important;
+  background-color: var(--accent);
+  border-radius: 0.375rem;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 10;
+}
+
+.hint-hide {
+  display: none !important;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 800px) {
+  .input-form {
+    grid-template-columns: 1fr;
+  }
+  .singlefield {
+    grid-column: auto;
+  }
+  .input-form > div {
+    grid-column: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .btndiv {
+    grid-template-columns: 1fr !important;
+  }
+  .input-main {
+    margin: 0 5vw 50px;
+  }
+  .input-form {
+    width: 90%;
+  }
+  .input-form input::placeholder {
+    font-size: 0.75rem;
+  }
+}

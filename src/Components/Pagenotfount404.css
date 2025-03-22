@@ -1,0 +1,11 @@
+.page404 {
+  transform: rotate(5deg);
+}
+
+.page404:hover {
+  transform: rotate(0deg) scale(1.05);
+}
+
+.link {
+  text-decoration: none;
+}

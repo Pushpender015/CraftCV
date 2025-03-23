@@ -1,97 +1,82 @@
-CraftCV
+# **CraftCV**
 
-CraftCV is a modern, responsive resume builder application built with React. This project was developed by Pushpender Singh as a learning tool and proof-of-concept. It allows users to input their personal details, work experience, education, skills, projects, and more, and then choose from a selection of resume templates to generate a downloadable resume.
+**CraftCV** is a modern, responsive resume builder application built with **React**. This project was developed by **Pushpender Singh** as a learning tool and proof-of-concept. It allows users to input their personal details, work experience, education, skills, projects, and more, and then choose from a selection of resume templates to generate a downloadable resume.
 
-Table of Contents
-Features
+## **Table of Contents**
 
-Technologies Used
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Installation
+## **Features**
 
-Usage
+- **User-Friendly Interface:** Clean and intuitive UI built with **React** and **Tailwind CSS**.
+- **Step-by-Step Resume Builder:** Guided process where users fill in personal details, work experience, education, skills, projects, and courses.
+- **Template Selection:** Choose from multiple resume themes (**Classic**, **Creative**, **Professional**, **Minimalist**, **Modern**) with theme-specific color options.
+- **Responsive Design:** Mobile-friendly layout with smooth animations and transitions.
+- **State Management:** Uses **Redux** and **redux-persist** for managing and storing user data.
+- **Form Management:** Robust form handling with **react-hook-form**.
+- **Error Handling:** Includes a **404 page** for invalid routes and proper error handling during data entry.
+- **Third-Party Integrations:** Uses **react-icons**, **react-spinners**, and more to enhance the user experience.
+- **Tailwind CSS:** Styling and design is managed using **Tailwind CSS** with **PostCSS** integration.
 
-Project Structure
+## **Technologies Used**
 
-Contributing
+- **React** – Front-end UI library  
+- **React Router DOM** – Client-side routing  
+- **Redux & Redux Persist** – State management and persistent storage  
+- **React Hook Form** – Form management  
+- **Tailwind CSS & PostCSS** – Styling and responsive design  
+- **React Icons** – Icon library for UI components  
+- **React Spinners** – Loader animations  
+- **Axios** – For API requests (if needed)  
+- **Other Packages:** @reduxjs/toolkit, testing libraries, etc.
 
-License
+## **Installation**
 
-Contact
+1. **Clone the repository:**
 
-Features
-User-Friendly Interface: Clean and intuitive UI built with React and Tailwind CSS.
+   ```bash
+   git clone https://github.com/Pushpender015/CraftCV.git
+   cd CraftCV
+   ```
 
-Step-by-Step Resume Builder: Guided process where users fill in personal details, work experience, education, skills, projects, and courses.
+2. **Install dependencies:**
 
-Template Selection: Choose from multiple resume themes (Classic, Creative, Professional, Minimalist, Modern) with theme-specific color options.
+   ```bash
+   npm install
+   ```
 
-Responsive Design: Mobile-friendly layout with smooth animations and transitions.
+3. **Run the application:**
 
-State Management: Uses Redux and redux-persist for managing and storing user data.
+   ```bash
+   npm start
+   ```
 
-Form Management: Robust form handling with react-hook-form.
+   The app will run on **[http://localhost:3000](http://localhost:3000)**.
 
-Error Handling: 404 page for invalid routes and proper error handling during data entry.
+## **Usage**
 
-Third-Party Integrations: Uses react-icons, react-spinners, and more to enhance the user experience.
+1. **Home Page:**  
+   Start by viewing the homepage which offers a brief overview and sample templates.
 
-Tailwind CSS: Styling and design is managed using Tailwind CSS with PostCSS integration.
+2. **Resume Building:**  
+   Click on **"Start"** to fill out your personal details, work experience, education, and other sections.
 
-Technologies Used
-React – Front-end UI library
+3. **Template Selection:**  
+   After entering your information, select a resume template and customize the theme color.
 
-React Router DOM – Client-side routing
+4. **Download Resume:**  
+   Once you have finalized the template, proceed to download your resume.
 
-Redux & Redux Persist – State management and persistent storage
+## **Project Structure**
 
-React Hook Form – Form management
-
-Tailwind CSS & PostCSS – Styling and responsive design
-
-React Icons – Icon library for UI components
-
-React Spinners – Loader animations
-
-Axios – For API requests (if needed)
-
-Other Packages: @reduxjs/toolkit, testing libraries, etc.
-
-Installation
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/Pushpender015/CraftCV.git
-cd CraftCV
-Install dependencies:
-
-bash
-Copy
-Edit
-npm install
-Run the application:
-
-bash
-Copy
-Edit
-npm start
-The app will run on http://localhost:3000.
-
-Usage
-Home Page: Start by viewing the homepage which offers a brief overview and sample templates.
-
-Resume Building: Click on "Start" to fill out your personal details, work experience, education, and other sections.
-
-Template Selection: After entering your information, select a resume template and customize the theme color.
-
-Download Resume: Once you have finalized the template, proceed to download your resume.
-
-Project Structure
-pgsql
-Copy
-Edit
+```
 CraftCV/
 ├── public/
 ├── src/
@@ -124,21 +109,22 @@ CraftCV/
 ├── package.json
 ├── postcss.config.js
 └── tailwind.config.js
-Contributing
+```
+
+## **Contributing**
+
 Contributions are welcome! If you’d like to contribute, please follow these steps:
 
-Fork the repository.
-
-Create a new branch for your feature or bugfix.
-
-Commit your changes with clear messages.
-
-Push your changes and submit a pull request.
+1. **Fork the repository.**
+2. **Create a new branch** for your feature or bugfix.
+3. **Commit your changes** with clear messages.
+4. **Push your changes** and submit a pull request.
 
 Please ensure your code follows the existing style and conventions.
 
-Contact
+## **Contact**
+
 For any inquiries or feedback, please contact:
 
-Name: Pushpender Singh
-GitHub: Pushpender015
+- **Name:** Pushpender Singh  
+- **GitHub:** [Pushpender015](https://github.com/Pushpender015)
